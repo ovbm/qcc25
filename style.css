@@ -46,7 +46,6 @@ main, header, footer {
 }
 
 #aboutme {
-  border: 1px solid yellow;
   padding: 20px;
   display: flex;
   justify-content: center;
