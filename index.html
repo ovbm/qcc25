@@ -24,17 +24,27 @@
     </nav>
   </header>
   <main>
-    <h1>Olivier</h1>
+    <h1>Hi GAY!</h1>
     <div id="aboutme">
       <img id="profil" src="profilbild.jpg" alt="Portrait von Olivier Baumann" />
       <p>
-        Hallo, ich bin Webentwickler aus Zürich.
+        Hallo, ich bin Olivier, ein Webentwickler aus Zürich, der den Queer Coding Camp Web-Kurs leitet.
       </p>
+      <audio id="audio" src="roar.mp3" type="audio/mpeg" />
     </div>
   </main>
   <footer>
-    <p>Made with ❤️ by <span id="name">Olivier Baumann</span></p>
+    <p>Made at <a href="https://www.queercodingcamp.ch">Queer Coding Camp</a> with ❤️ by <span id="name">Olivier
+        Baumann</span></p>
   </footer>
+  <script>
+    function play() {
+      var audio = document.getElementById("audio");
+      audio.play();
+    }
+    var profileButton = document.getElementById("profil");
+    profileButton.addEventListener('mouseover', play);
+  </script>
 </body>
 
 </html>

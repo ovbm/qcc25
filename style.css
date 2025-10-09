@@ -22,6 +22,22 @@ a {
   font-weight: bold;
 }
 
+nav a:hover {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: underline;
+}
+
+#profil {
+  transition: all 0.3s;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+#profil:hover {
+  transform: rotateY(20deg) rotateX(10deg) scale(1.05);
+  box-shadow: -22px 12px 32px rgba(255, 255, 255, 0.4);
+}
+
 html,
 body {
   width: 100%;
@@ -39,7 +55,9 @@ body {
     background-position: 0% 50%;
   }
 }
-main, header, footer {
+main,
+header,
+footer {
   max-width: 900px;
   margin: auto;
   padding: 20px;
@@ -52,11 +70,6 @@ main, header, footer {
   flex-direction: column;
   gap: 20px;
   align-items: center;
-}
-
-#aboutme p,
-#aboutme img {
-  border: 1px solid white;
 }
 
 @media (min-width: 768px) {
